@@ -107,23 +107,23 @@ If you haven't already, [please download Chrome](https://www.google.com/chrome/)
 
 All browsers have developer tools that are very similar. But just for consistency's sake, we'll ask that you use Chrome for this lesson.
 
-## Open files in Chrome using Terminal (5/20)
-
-Copy and paste the following into Terminal. **It must be `>>` instead of `>`.** Running this will add a shortcut to your Bash profile for opening stuff in Chrome:
-
-```sh
-$ echo "alias chrome='open -a \"Google Chrome.app\"'" >> ~/.bash_profile
-```
-
-**Close and re-open your Terminal window.** Then, just type `$ chrome filename.html`.
-
-## Keyboard Shortcuts (5/25)
-
 Chrome has its own combined command line and REPL called the Console. To open it press `Command` + `Option` + `J`.
 
 You can also open it from the View menu as shown here:
 
 ![View menu](chrome_menu.jpg)
+
+#### Disable Caching
+
+Click the little dots at the top-right of the console and select "settings".
+
+![Console settings](settings-1.jpg)
+
+Check the "Disable cache" box. This makes sure Chrome reloads your Javascript whenever you refresh the page.
+
+![Console settings two](settings-2.jpg)
+
+## Keyboard Shortcuts (5/25)
 
 Notice those weird characters to the right of all the things on the menu? Each is the keyboard shortcut for that menu item. Knowing the keyboard shortcut will make your life a million times easier.
 
@@ -166,6 +166,22 @@ This shows you all the tabs, windows, and extensions Chrome is currently running
 ![Task manager window](task_manager_window.jpg)
 
 That's a problem! Click the row containing that tab, and click "End process".
+
+## Open files in Chrome using Terminal (5/20)
+
+Copy and paste the following into Terminal. **It must be `>>` instead of `>`.** Running this will add a shortcut to your Bash profile for opening stuff in Chrome:
+
+```sh
+$ echo "alias chrome='open -a \"Google Chrome.app\"'" >> ~/.bash_profile
+```
+
+#### For Linux users
+
+```sh
+$ echo "alias chrome='google-chrome'" >> ~/.bash_profile
+```
+
+**Close and re-open your Terminal window.** Then, just type `$ chrome filename.html`.
 
 # Console Debugging
 
