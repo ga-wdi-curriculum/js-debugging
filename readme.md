@@ -335,3 +335,8 @@ Failing all that, ask an instructor. Generally the first question we'll ask *you
 https://github.com/ga-wdi-exercises/javascript-debugging
 
 # References
+
+- Screencasts
+  - WDI8
+    - [Part 1](https://youtu.be/dCukspxmNDs)
+    - [Part 2](https://youtu.be/VbfB1qB20Yk)
