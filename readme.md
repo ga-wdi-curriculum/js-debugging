@@ -37,10 +37,8 @@ Here's a piece of HTML/JS that "throws" an error:
   <head>
     <title>JS Errors</title>
     <script>
-    window.onload = function(){
-      throw(new Error("Oh, noes."));
-      console.log("Such is life.");
-    }
+    throw(new Error("Oh, noes."));
+    console.log("Such is life.");
     </script>
   </head>
   <body></body>
@@ -50,7 +48,7 @@ Here's a piece of HTML/JS that "throws" an error:
 The result:
 
 ```
-Uncaught Error: Oh, noes.       index.html:7
+Uncaught Error: Oh, noes.       index.html:6
 ```
 
 The `console.log` doesn't happen. This is because **when an error is thrown, Javascript stops whatever the current function is doing, just like `return`**.
@@ -69,14 +67,12 @@ Here's an example of catching an error:
   <head>
     <title>JS Errors</title>
     <script>
-    window.onload = function(){
-      try{
-        throw(new Error("Oh, noes."));
-      }catch(err){
-        console.log("Oops! There was an error. It says: " + err.message);
-      }
-      console.log("Such is life.");
+    try{
+      throw(new Error("Oh, noes."));
+    }catch(err){
+      console.log("Oops! There was an error. It says: " + err.message);
     }
+    console.log("Such is life.");
     </script>
   </head>
   <body></body>
@@ -90,7 +86,7 @@ Oops! There was an error. It says: Oh, noes.
 Such is life.
 ```
 
-This time the `console.log` *does* happen. When you "catch" an error Javascript does whatever you tell it to do, and keeps on going. When you don't catch an error, Javascript stops.
+This time the `console.log` *does* happen. When you "catch" an error Javascript does whatever you tell it to do in response to the error, and then keeps on going. When you don't catch an error, Javascript stops.
 
 Javascript is intentionally "trying" some code, and if the code throws an error, Javascript is waiting to "catch" it.
 
@@ -99,8 +95,6 @@ This `try...catch` system is something most programming languages have although 
 ### And that's all we'll say about error handling for now
 
 Again, error handling is an advanced concept. Generally we don't recommend getting into it until everything else on your app is very well-polished.
-
-When you get an error in Javascript, somewhere there's a line of code saying to "throw" that error.
 
 
 # Chrome Developer Tools
@@ -115,7 +109,7 @@ All browsers have developer tools that are very similar. But just for consistenc
 
 ## Open files in Chrome using Terminal (5/20)
 
-Copy and paste the following. **It must be `>>` instead of `>`.** Running this will add a shortcut to your Bash profile for opening stuff in Chrome:
+Copy and paste the following into Terminal. **It must be `>>` instead of `>`.** Running this will add a shortcut to your Bash profile for opening stuff in Chrome:
 
 ```sh
 $ echo "alias chrome='open -a \"Google Chrome.app\"'" >> ~/.bash_profile
@@ -165,9 +159,11 @@ To make this stop, you can quit Chrome, wait for Chrome to throw an error, **or*
 
 This is similar to the Task Manager in Windows.
 
-![Taks manager](task_manager.png)
+![Task manager](task_manager.png)
 
 This shows you all the tabs, windows, and extensions Chrome is currently running. You should see the tab with the infinite loop taking up about 99% of your computer's CPU (central processing unit).
+
+![Task manager window](task_manager_window.jpg)
 
 That's a problem! Click the row containing that tab, and click "End process".
 
