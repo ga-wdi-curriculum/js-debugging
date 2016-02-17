@@ -188,7 +188,7 @@ Click on `controller.js:8` and it'll show you that specific line of code.
 
 ### Stack traces
 
-If you haven't already, **clone down this lesson plan's repo.** Then, open `stacktrace.html` in Chrome and open the Chrome console. You should see an error.
+If you haven't already, **clone down this lesson plan's repo.** Then, open `stacktrace.html` in Chrome and open the Chrome console. **Refresh the page.** You should see two different lines starting with "User", followed by an error.
 
 ![Error](script_errors.jpg)
 
