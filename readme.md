@@ -6,8 +6,6 @@
 - Identify and resolve common and uncommon "logical errors" that affect the results of your program
 - Use logs to troubleshoot errors in an application (console log in Dev Tools)
 - Conduct real-time debugging in the browser (start small, triangulation, remove code)
-- Access properties of a class using helper methods ( `typeof( )` for datatypes)
-- Use debuggers and breakpoints to identify logical errors in expressions
 
 ## Preparation
 *Before this lesson, students should already be able to:*
