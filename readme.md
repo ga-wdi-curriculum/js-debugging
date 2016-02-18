@@ -1,6 +1,6 @@
 # JS Debugging
 
-## Objectives
+## Learning Objectives
 *After this lesson, students will be able to:*
 
 - Identify and resolve common and uncommon "logical errors" that affect the results of your program
