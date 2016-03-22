@@ -6,6 +6,7 @@
 - Identify and resolve common and uncommon "logical errors" that affect the results of your program
 - Use logs to troubleshoot errors in an application (console log in Dev Tools)
 - Conduct real-time debugging in the browser (start small, triangulation, remove code)
+<!-- - TODO LO for syntax errors  -->
 
 ## Preparation
 *Before this lesson, students should already be able to:*
@@ -51,7 +52,7 @@ The result:
 Uncaught Error: Oh, noes.       index.html:6
 ```
 
-The `console.log` doesn't happen. This is because **when an error is thrown, Javascript stops whatever the current function is doing, just like `return`**.
+The `console.log` doesn't happen.
 
 ## Error handling
 
@@ -324,15 +325,21 @@ If the answer doesn't look promising, I go to the next. I repeat until the answe
 
 If none of the answers are promising, I go on to the next thing that turned up on Google.
 
-You can get [badges](stackoverflow.com/help/badges) and [special privileges](stackoverflow.com/help/privileges) on Stack Overflow by asking good questions and giving good answers! [I have 1066 points as I write this.](http://stackoverflow.com/users/2053389/robertakarobin) Catch me!
+You can get [badges](stackoverflow.com/help/badges) and [special privileges](stackoverflow.com/help/privileges) on Stack Overflow by asking good questions and giving good answers! [Robin has 1084 points as of  write this.](http://stackoverflow.com/users/2053389/robertakarobin) Catch me!
 
 ## Instructors
 
 Failing all that, ask an instructor. Generally the first question we'll ask *you* is, "Did you get an error?" Having an error message makes things *much* easier to fix. We likely don't need to know anything at all about your app to fix the problem... but would love to learn about it if you have the time! :)
 
+[Asking for help](https://github.com/ga-dc/wdi9/blob/master/asking-for-help.md)
+
 ## You do: Debugging Practice (15/150)
 
 https://github.com/ga-wdi-exercises/javascript-debugging
+
+## Exit Ticket (3 min)
+
+Before you leave, plase take ~3 minutes to complete [this exit ticket.](https://docs.google.com/forms/d/1d03NYFphG6m7yAMUY1OlnJZMQWof7Rt6b5MX3Xn4ZPs/viewform)
 
 # References
 
