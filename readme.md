@@ -153,8 +153,14 @@ while(true){}
 
 Press enter.
 
-#### Q. What just happened? Why can you no longer click anything on the page?
-> You just put Javascript into an infinite loop. This prevents anything else from happening on the page.
+<details>
+
+  <summary><strong>Q. What just happened? Why can you no longer click anything on the page?</strong></summary>
+
+  > You just put Javascript into an infinite loop. This prevents anything else from happening on the page.
+
+</details>
+<br/>
 
 To make this stop, you can quit Chrome, wait for Chrome to throw an error, **or** stop this Javascript using Chrome's Task Manager in the "Window" menu.
 
@@ -198,8 +204,14 @@ Let's say I get this error message:
 Uncaught SyntaxError: Unexpected token {      controller.js:8
 ```
 
-#### Q. In what file and on what line is the error?
-> Line 8 of controller.js
+<details>
+
+  <summary><strong>Q. In what file and on what line is the error?</strong></summary>
+
+  > Line 8 of controller.js
+
+</details>
+</br>
 
 Click on `controller.js:8` and it'll show you that specific line of code.
 
@@ -234,11 +246,24 @@ In the console, type:
 > console.dir(document.body);
 ```
 
-#### Q. With your partner: What's the difference between `console.log` and `console.dir`?
-> `console.dir` prints everything as an object, showing you all its properties and methods. `console.log` prints everything however Chrome sees fit: objects look like JSON, and DOM elements look like HTML.
+<details>
 
-#### Q. So what's the problem with this piece of code?
-> Juan needs a last name.
+  <summary><strong>Q. With your partner: What's the difference between <code>console.log</code> and <code>console.dir</code>?</strong></summary>
+
+  > `console.dir` prints everything as an object, showing you all its properties and methods. `console.log` prints everything however Chrome sees fit: objects look like JSON, and DOM elements look like HTML.
+
+
+</details>
+</br>
+
+<details>
+
+  <summary><strong>Q. So what's the problem with this piece of code??</strong></summary>
+
+  > Juan needs a last name.
+
+</details>
+</br>
 
 When I need to debug stuff, I just put `console.log` everywhere, and look for the place my variable stops having the value I expect it to have. That's where my error is.
 
@@ -275,12 +300,18 @@ https://github.com/ga-wdi-exercises/debugger-jokes
 
 Javascript has [7 error types](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error#Error_types). 3 of them will account for 99% of the errors you encounter in this class, so we're going to focus on those.
 
-#### Q. What might these 3 words mean in the context of Javascript? *Syntax*, *reference*, and *type*.
-> Syntax: The way the code is actually written.
+<details>
 
-> Reference: The process of calling variables and functions.
+  <summary><strong>Q. What might these 3 words mean in the context of Javascript? <i>Syntax</i>, <i>reference</i>, and <i>type</i>.</strong></summary>
 
-> Type: The different kinds of data Javascript can handle, like strings and numbers.
+  > Syntax: The way the code is actually written.
+
+  > Reference: The process of calling variables and functions.
+
+  > Type: The different kinds of data Javascript can handle, like strings and numbers.
+
+</details>
+<br/>
 
 ### You Do: Getting acquainted with error messages (20/120)
 
