@@ -368,10 +368,6 @@ Failing all that, ask an instructor. Generally the first question we'll ask *you
 
 https://github.com/ga-wdi-exercises/javascript-debugging
 
-## Exit Ticket (3 min)
-
-Before you leave, plase take ~3 minutes to complete [this exit ticket.](https://docs.google.com/forms/d/1d03NYFphG6m7yAMUY1OlnJZMQWof7Rt6b5MX3Xn4ZPs/viewform)
-
 # References
 
 - Screencasts
