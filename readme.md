@@ -285,6 +285,8 @@ A quick and widely used way to debug errors is to put `console.log` statements e
 
 ## Debugger (10 minutes / 1:10)
 
+> 5 minutes exercise. 5 minutes review.
+
 **Replace** the `console.log` and `console.dir` in the script with the word `debugger;`. Refresh the page.
 
 Now, in the console type each of the following. **What values do they have?**
