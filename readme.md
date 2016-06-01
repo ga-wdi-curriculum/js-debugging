@@ -3,10 +3,10 @@
 ## Learning Objectives
 *After this lesson, students will be able to:*
 
-* Identify and resolve common and uncommon "logical errors" that affect the results of your program
-* Use logs to troubleshoot errors in an application (console log in Dev Tools)
-* Conduct real-time debugging in the browser (start small, triangulation, remove code)
-* Differentiate between Syntax, Reference, and Type errors
+* Identify and resolve common and uncommon "logical errors" that affect the results of your program.
+* Use logs to troubleshoot errors in an application.
+* Conduct real-time debugging in the browser.
+* Differentiate between Syntax, Reference, and Type errors.
 
 ## Preparation
 
@@ -111,21 +111,11 @@ If you haven't already, [please download Chrome](https://www.google.com/chrome/)
 
 All browsers have developer tools that are very similar. But just for consistency's sake, we'll ask that you use Chrome for this lesson.
 
-Chrome has its own combined command line and REPL called the Console. To open it press `Command` + `Option` + `J`.
-
-You can also open it from the View menu as shown here:
+You can open it from the View menu as shown here...
 
 ![View menu](chrome_menu.jpg)
 
-#### Disable Caching
-
-Click the little dots at the top-right of the console and select "settings".
-
-![Console settings](settings-1.jpg)
-
-Check the "Disable cache" box. This makes sure Chrome reloads your Javascript whenever you refresh the page.
-
-![Console settings two](settings-2.jpg)
+Let's take a tour of the features and tools available to us in Chrome's dev tools...
 
 ## Keyboard Shortcuts (5 minutes / 0:20)
 
@@ -146,20 +136,32 @@ Here's a table of what those weird characters mean:
 | &#9099; | Escape |
 | &#8682; | Caps lock |
 
-**Q: Find keyboard shortcuts that allow you to do the following...**
+**Spend a minute finding the shortcuts for the following commands and practicing them...**
 * View the source code of an HTML page.
 * Open Chrome's dev tools.
 * Open the browser's Javascript console.
 
+> There are more Chrome shortcuts than the ones we discussed here. [Take a look at this comprehensive list](https://support.google.com/chrome/answer/157179?hl=en).
+
+#### Disable Caching
+
+Click the little dots at the top-right of the console and select "settings".
+
+![Console settings](settings-1.jpg)
+
+Check the "Disable cache" box. This makes sure Chrome reloads your Javascript whenever you refresh the page.
+
+![Console settings two](settings-2.jpg)
+
 ## Task Manager (5 minutes / 0:25)
 
-Whatever page you're looking at in Chrome right now, open the console and enter:
+Whatever page you're looking at in Chrome right now, open the console and enter...
 
 ```js
 while(true){}
 ```
 
-Press enter.
+Now press enter.
 
 <details>
 
@@ -183,6 +185,8 @@ This shows you all the tabs, windows, and extensions Chrome is currently running
 That's a problem! Click the row containing that tab, and click "End process".
 
 ## Open Files in Chrome Using Terminal (5 minutes / 0:30)
+
+The last thing we want to do before getting into some actual debugging is to make it so that we can easily open a file in Chrome via the command line. Those of you with Chrome as your default browser can already do this using `open`. For those of you that don't...
 
 Copy and paste the following into Terminal. **It must be `>>` instead of `>`.** Running this will add a shortcut to your Bash profile for opening stuff in Chrome:
 
@@ -243,8 +247,6 @@ This is a **stack trace**. It shows all the functions that were called in order 
 
 Looking back through the stack trace should reveal the place at which the error was set in motion.
 
-<!-- AM: Room for activity / CFU here? -->
-
 ## Break (10 minutes / 0:50)
 
 ## `console.log`-ing (10 minutes / 1:00)
@@ -274,7 +276,7 @@ In the console, type:
 
 <details>
 
-  <summary><strong>Q. So what's the problem with this piece of code?</strong></summary>
+  <summary><strong>Q. So what's the problem with the code in `stacktrace.html`?</strong></summary>
 
   > Juan needs a last name.
 
@@ -284,8 +286,6 @@ In the console, type:
 A quick and widely used way to debug errors is to put `console.log` statements everywhere. From there, we look for the place a variable stops having the value we expect it to have. That's where the error is.
 
 ## Debugger (10 minutes / 1:10)
-
-> 5 minutes exercise. 5 minutes review.
 
 **Replace** the `console.log` and `console.dir` in the script with the word `debugger;`. Refresh the page.
 
@@ -307,6 +307,8 @@ To make your code continue, press the little eject-looking button.
 You can have as many `debugger;` lines as you want. The script will stop at each one and wait for you to tell it to continue.
 
 ## You Do: Debugger Jokes (10 minutes / 1:20)
+
+> 5 minutes exercise. 5 minutes review.
 
 https://github.com/ga-wdi-exercises/debugger-jokes
 
@@ -332,6 +334,8 @@ Javascript has [7 error types](https://developer.mozilla.org/en-US/docs/Web/Java
 <br/>
 
 ### You Do: Getting Acquainted With Error Messages (20 minutes / 2:00)
+
+> 15 minutes exercise. 5 minutes review.
 
 https://github.com/ga-wdi-exercises/js-errors-practice
 
