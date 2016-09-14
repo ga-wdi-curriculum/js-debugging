@@ -11,9 +11,15 @@
 
 This class is about Javascript errors and what to do when you get one.
 
-Errors don't just happen. Chrome doesn't just "break". In fact, it's not Chrome that's throwing the error at all: it's Javascript.
+<details>
+ <summary>What does it mean to have an error in JS?</summary>
+  <br>
 
-Whenever you run into an error, it's because somewhere in the code you're running or in Javascript's source code there's a line that says, "When this happens, throw an error."
+  Errors don't just happen. Chrome doesn't just "break". In fact, it's not Chrome that's throwing the error at all: it's Javascript.
+
+  Whenever you run into an error, it's because somewhere in the code you're running or in Javascript's source code there's a line that says, "When this happens, throw an error."
+
+</details>
 
 ## What's an Error?
 
